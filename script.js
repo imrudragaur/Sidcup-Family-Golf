@@ -6,7 +6,7 @@ document.addEventListener("mousemove", function (dets) {
     cblur.style.left = dets.x - 200 + "px"
     cblur.style.top = dets.y - 200 + "px"
 })
-var h4all = document.querySelectorAll("#nav h4")
+const h4all = document.querySelectorAll("#nav h4")
 h4all.forEach(function (elem) {
     elem.addEventListener("mouseenter", function () {
         cursor.style.scale = 3
@@ -64,12 +64,12 @@ gsap.from(".card", {
     scale: 0.8,
     opacity: 0,
     duration: 1,
-    stagger: 0.1,// userd for one by one targetting
+    // stagger: 0.1,// userd for one by one targetting
     scrollTrigger: {
         trigger: ".card",
         scroller: "body",
         start: "top 70%",
-        // markers:true,
+        markers:false,
         end: "top 65%",
         scrub: 1,
     }
