@@ -99,13 +99,13 @@ gsap.from("#colon2", {
     }
 })
 gsap.from("#page4 h1", {
-    y: 50,
+    y: 40,
     scrollTrigger: {
         trigger: "#page4 h1",
         scroller: "body",
         // markers:true,
-        start: "top 75%",
-        end: "top 70%",
+        start: "top 80%",
+        end: "top 75%",
         scrub: 3,
     }
 })

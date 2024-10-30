@@ -1,6 +1,6 @@
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   #nav {
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 0 10px;
     height: 120px;
     gap: 10px;
@@ -8,8 +8,13 @@
   #nav img {
     height: 70px;
   }
+  #menu {
+    display: block;
+    font-weight: 900;
+  }
   #nav h4 {
     display: none;
+    background-color:
   }
   #page1 {
     padding: 0;
@@ -35,14 +40,23 @@
   #scroller h4 {
     font-size: 3rem;
   }
+  #cursor{
+    display: none;
+  }
+  #cursor-blur{
+    display: none;
+  }
   #about-us {
     position: relative;
-    height: 70vh;
+    height: 50vh;
+  
+    /* background-color: pink; */
   }
   #about-us img {
     position: absolute;
     height: 180px;
     width: 180px;
+    display: none;
   }
   #as-img1 {
     top: 20px;
@@ -65,6 +79,9 @@
     font-weight: 400;
     line-height: 1;
   }
+  #as_p2{
+    margin-top: 50px;
+  }
 
   #cards-container {
     height: 140vh;
@@ -74,17 +91,30 @@
   .card {
     height: 100%;
   }
+ .overlay h4{
+  padding-top:25px;
+  font-size: 16px;
+ }
+ .overlay p{
+  font-size: 12px;
+ }
   #card1 {
     height: 25%;
     width: 80%;
+    background-size:cover;
+    background-position: center;
   }
   #card2 {
     height: 30%;
     width: 80%;
+    background-size:cover;
+    background-position: center;
   }
   #card3 {
     height: 25%;
     width: 80%;
+    background-size:cover;
+    background-position:inherit
   }
   #green-div {
     height: 30vh;
@@ -99,7 +129,7 @@
     width: 20%;
   }
   #page3 {
-    height: 65vh;
+    height: 60vh;
   }
   #page3 > p {
     font-size: 15px;
@@ -138,10 +168,9 @@
     color: #95c11e;
     -webkit-text-stroke: 0.5px #fff;
   }
-  #footer{
-  
-   margin-top: 20px;
-   height: 75vh;
+  #footer {
+    margin-top: 20px;
+    height: 70vh;
     flex-direction: column;
     align-items: start;
     gap: 5vw;
@@ -149,7 +178,7 @@
   #footer > img {
     position: absolute;
     left: 5px;
-    bottom :0;
+    bottom: 0;
     height: 40%;
     z-index: 0;
   }
@@ -182,5 +211,4 @@
     line-height: 20px;
     margin-bottom: 10px;
   }
-
 }
