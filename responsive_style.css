@@ -14,7 +14,6 @@
   }
   #nav h4 {
     display: none;
-
   }
   #page1 {
     padding: 0;
@@ -40,16 +39,16 @@
   #scroller h4 {
     font-size: 3rem;
   }
-  #cursor{
+  #cursor {
     display: none;
   }
-  #cursor-blur{
+  #cursor-blur {
     display: none;
   }
   #about-us {
     position: relative;
     height: 50vh;
-  
+
     /* background-color: pink; */
   }
   #about-us img {
@@ -79,7 +78,7 @@
     font-weight: 400;
     line-height: 1;
   }
-  #as_p2{
+  #as_p2 {
     margin-top: 50px;
   }
 
@@ -91,30 +90,30 @@
   .card {
     height: 100%;
   }
- .overlay h4{
-  padding-top:25px;
-  font-size: 16px;
- }
- .overlay p{
-  font-size: 12px;
- }
+  .overlay h4 {
+    padding-top: 25px;
+    font-size: 16px;
+  }
+  .overlay p {
+    font-size: 12px;
+  }
   #card1 {
     height: 25%;
     width: 80%;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
   }
   #card2 {
     height: 30%;
     width: 80%;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
   }
   #card3 {
     height: 25%;
     width: 80%;
-    background-size:cover;
-    background-position:inherit
+    background-size: cover;
+    background-position: inherit;
   }
   #green-div {
     height: 30vh;

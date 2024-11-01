@@ -1,3 +1,22 @@
+
+// Initialize Lenis
+const lenis = new Lenis();
+
+// Listen for the scroll event and log the event data
+lenis.on('scroll', (e) => {
+//   console.log(e);
+});
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+
+
 const crsr = document.querySelector("#cursor")
 const cblur = document.querySelector("#cursor-blur")
 document.addEventListener("mousemove", function (dets) {
@@ -24,6 +43,7 @@ gsap.to("#nav", {
     backgroundColor: "#000",
     duration: 0.5,
     height: "84px",
+    ease: "power1.inOut",
     scrollTrigger: {
         trigger: "#nav",
         scroller: "body",
@@ -37,6 +57,7 @@ gsap.to("#nav", {
 
 gsap.to("#main", {
     backgroundColor: "#000",
+    ease: "power1.inOut",
     scrollTrigger: {
         trigger: "#main",
         scroller: "body",
@@ -51,6 +72,7 @@ gsap.from("#about-us img,#about-us-in", {
     y: 50,
     opacity: 0,
     duration: 1,
+    ease: "power1.inOut",
     // stagger:0.4 ,// userd for one by one targetting
     scrollTrigger: {
         trigger: "#about-us",
@@ -64,12 +86,13 @@ gsap.from(".card", {
     scale: 0.8,
     opacity: 0,
     duration: 1,
+    ease: "power1.inOut",
     // stagger: 0.1,// userd for one by one targetting
     scrollTrigger: {
         trigger: ".card",
         scroller: "body",
         start: "top 70%",
-        markers:false,
+        markers: false,
         end: "top 65%",
         scrub: 1,
     }
@@ -77,6 +100,7 @@ gsap.from(".card", {
 gsap.from("#colon1", {
     y: -70,
     x: -70,
+    ease: "power1.inOut",
     scrollTrigger: {
         trigger: "#colon1",
         scroller: "body",
@@ -89,6 +113,7 @@ gsap.from("#colon1", {
 gsap.from("#colon2", {
     y: 70,
     x: 70,
+    ease: "power1.inOut",
     scrollTrigger: {
         trigger: "#colon1",
         scroller: "body",
@@ -100,6 +125,7 @@ gsap.from("#colon2", {
 })
 gsap.from("#page4 h1", {
     y: 40,
+    ease: "power1.inOut",
     scrollTrigger: {
         trigger: "#page4 h1",
         scroller: "body",

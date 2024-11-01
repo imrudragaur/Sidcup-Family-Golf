@@ -55,7 +55,7 @@ body::-webkit-scrollbar-thumb {
 #nav img {
   height: 59px;
 }
-#menu{
+#menu {
   height: 30px;
   width: 30px;
   object-fit: contain;
@@ -402,7 +402,6 @@ video {
   -webkit-text-stroke: 1px #fff;
 }
 
-
 #footer {
   display: flex;
   /* flex-direction: column; */
@@ -416,7 +415,7 @@ video {
   gap: 6.5vw;
   padding: 20px 50px;
 }
-#footer> img {
+#footer > img {
   position: absolute;
   left: -20px;
   height: 70%;
@@ -459,8 +458,7 @@ video {
   line-height: 20px;
   margin-bottom: 8px;
 }
-#f5 img{
+#f5 img {
   height: 20px;
   width: 20px;
 }
-
